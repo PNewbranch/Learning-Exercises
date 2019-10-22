@@ -38,9 +38,13 @@ namespace Learning_Exercises
         private static void RunExerciseFour()
         {
             String str = "The quick fox Jumped Over the DOG";
-                    //“The brown fox jumped over the lazy dog”,
+            //“The brown fox jumped over the lazy dog”,
             // code here 
-            str = str.Substring(0, 3);
+            str = str.Replace("quick", "brown");
+
+            //str = str.Insert(str.IndexOf)
+            //str = str.Substring(0, 4);
+
             Console.WriteLine(str);
         }
 
