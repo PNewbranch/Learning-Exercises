@@ -12,7 +12,7 @@ namespace Learning_Exercises
             Console.WriteLine("Hello " + firstName + " " + lastName + "!  I’m glad to inform you that you are the test subject of my very first assignment");
             Console.WriteLine("You successfully ran exercise one!");
         }
-        
+
         private static void RunExerciseTwo()
         {
             var dateToday = DateTime.Now;
@@ -20,15 +20,40 @@ namespace Learning_Exercises
             var dateTomorrow = DateTime.Now.AddDays(+1) + Environment.NewLine;
 
             Console.WriteLine("Todays date is " + dateToday.Day + "/" + dateYesterday.Month + "/" + dateYesterday.Year);
-            Console.WriteLine("Tomorrows date is " + dateYesterday.Day + "/" + dateYesterday.Month +"/" + dateYesterday.Year);
+            Console.WriteLine("Tomorrows date is " + dateYesterday.Day + "/" + dateYesterday.Month + "/" + dateYesterday.Year);
             Console.WriteLine("Yesterdays date was " + dateYesterday.Day + "/" + dateYesterday.Month + "/" + dateYesterday.Year);
             Console.WriteLine("You successfully ran exercise two!");
+        }
+
+        private static void RunExerciseThree()
+        {
+            Console.Write("Enter your first name followed by enter: ");
+            string firstName = Console.ReadLine();
+            Console.Write("Enter your last name followed by enter: ");
+            string lastName = Console.ReadLine();
+            Console.WriteLine(firstName + " " + lastName);
+
+        }
+
+        private static void RunExerciseFour()
+        {
+            String str = "The quick fox Jumped Over the DOG";
+                    //“The brown fox jumped over the lazy dog”,
+            // code here 
+            str = str.Substring(0, 3);
+            Console.WriteLine(str);
         }
 
         static void Main(string[] args)
         {
             //Console.WriteLine("Hello World!");
 
+    
+            //CTRL + K + C - avkommentera CTRL + K + U
+            //String part = "if you're doing your, \tr "; 
+            //part = part + " best, \tyou won't have any"; 
+            //String quote = part + " time to worry about failure."; 
+            //Console.WriteLine(quote);
 
             var keepAlive = true;
             while (keepAlive)
@@ -46,7 +71,10 @@ namespace Learning_Exercises
                             RunExerciseTwo();
                             break;
                         case 3:
-                            // Call your next assignment method here!
+                            RunExerciseThree();
+                            break;
+                        case 4:
+                            RunExerciseFour();
                             break;
                         case -1:
                             keepAlive = false;
