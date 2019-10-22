@@ -6,11 +6,22 @@ namespace Learning_Exercises
     {
         private static void RunExerciseOne()
         {
+            string firstName = "Peter";
+            string lastName = "Pan";
+
+            Console.WriteLine("Hello " + firstName + " " + lastName + "!  I’m glad to inform you that you are the test subject of my very first assignment");
             Console.WriteLine("You successfully ran exercise one!");
         }
         
         private static void RunExerciseTwo()
         {
+            var dateToday = DateTime.Now;
+            var dateYesterday = DateTime.Now.AddDays(-1);
+            var dateTomorrow = DateTime.Now.AddDays(+1) + Environment.NewLine;
+
+            Console.WriteLine("Todays date is: " + dateToday.Day + "/" + dateYesterday.Month + "/" + dateYesterday.Year);
+            Console.WriteLine("Tomorrows date is " + dateYesterday.Day + "/" + dateYesterday.Month +"/" + dateYesterday.Year);
+            Console.WriteLine("Yesterdays date was " + dateYesterday.Day + "/" + dateYesterday.Month + "/" + dateYesterday.Year);
             Console.WriteLine("You successfully ran exercise two!");
         }
 
