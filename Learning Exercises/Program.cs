@@ -19,7 +19,7 @@ namespace Learning_Exercises
             var dateYesterday = DateTime.Now.AddDays(-1);
             var dateTomorrow = DateTime.Now.AddDays(+1) + Environment.NewLine;
 
-            Console.WriteLine("Todays date is: " + dateToday.Day + "/" + dateYesterday.Month + "/" + dateYesterday.Year);
+            Console.WriteLine("Todays date is " + dateToday.Day + "/" + dateYesterday.Month + "/" + dateYesterday.Year);
             Console.WriteLine("Tomorrows date is " + dateYesterday.Day + "/" + dateYesterday.Month +"/" + dateYesterday.Year);
             Console.WriteLine("Yesterdays date was " + dateYesterday.Day + "/" + dateYesterday.Month + "/" + dateYesterday.Year);
             Console.WriteLine("You successfully ran exercise two!");
