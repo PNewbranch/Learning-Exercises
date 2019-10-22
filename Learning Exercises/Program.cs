@@ -46,7 +46,7 @@ namespace Learning_Exercises
                             break;
                     }
                     Console.ResetColor();
-                    Console.WriteLine("Hit any key to continue");
+                    Console.WriteLine(" Hit any key to continue");
                     Console.ReadKey();
                     Console.Clear();
                 }
