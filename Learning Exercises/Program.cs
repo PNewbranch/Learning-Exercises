@@ -37,16 +37,54 @@ namespace Learning_Exercises
 
         private static void RunExerciseFour()
         {
-            String str = "The quick fox Jumped Over the DOG";
-            //“The brown fox jumped over the lazy dog”,
-            // code here 
+            String str = "The quick fox Jumped Over the DOG";  //“The brown fox jumped over the lazy dog”,
+
+            string subStr;
+            int startPos;
+
+            startPos = str.IndexOf("D");
+            subStr = str.Substring(startPos, 3);
+
+            //subStr = str.ToUpper(subStr);
+
+            //str = str.Replace(startPos + 3, "dog");
+
+            str = str.Insert(startPos -1, " lazy");
+
+
             str = str.Replace("quick", "brown");
+            str = str.Replace("J", "j");
+            str = str.Replace("O", "o");
 
-            //str = str.Insert(str.IndexOf)
-            //str = str.Substring(0, 4);
-
+            Console.WriteLine(startPos);
             Console.WriteLine(str);
         }
+        
+       
+
+
+        // anropas från mail 
+        static string AskUserFor(string forWhat)
+        {
+            Console.WriteLine($"Please input {forWhat}:  ");
+            return Console.ReadLine();
+        }
+
+        static int AskuserForNumber(string forWhat)  //overload = flera funktioner med samma namn där input avgör vilken som kör 
+        {
+            return int.Parse(AskUserFor(forWhat)); //anropa AskUserFor - svaret därifrån 
+        }
+
+        static double AskuserForNumber()
+        {
+            return double.Parse(AskUserFor("decimal number"));
+        }
+
+
+
+
+
+
 
         static void Main(string[] args)
         {
