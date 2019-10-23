@@ -42,22 +42,20 @@ namespace Learning_Exercises
             string subStr;
             int startPos;
 
-            startPos = str.IndexOf("D");
-            subStr = str.Substring(startPos, 3);
+            startPos = str.IndexOf("D"); //hitta pos för D i DOG
+            subStr = str.Substring(startPos, 3); //lägg i en substring
+            subStr = subStr.ToLower(); //ändra substrängen till små bokstäver
+            str = str.Replace("DOG", subStr); //byt ut DOG med substrängen som innehåller dog
 
-            //subStr = str.ToUpper(subStr);
-
-            //str = str.Replace(startPos + 3, "dog");
-
-            str = str.Insert(startPos -1, " lazy");
-
-
-            str = str.Replace("quick", "brown");
+            str = str.Insert(startPos -1, " lazy"); //lägg till lazy
+            str = str.Replace("quick", "brown"); //byt ut en del texter
             str = str.Replace("J", "j");
             str = str.Replace("O", "o");
 
-            Console.WriteLine(startPos);
+            //Console.WriteLine(startPos);
+            //Console.WriteLine(subStr);
             Console.WriteLine(str);
+
         }
         
        
