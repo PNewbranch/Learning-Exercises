@@ -31,7 +31,7 @@ namespace Learning_Exercises
             string firstName = Console.ReadLine();
             Console.Write("Enter your last name followed by enter: ");
             string lastName = Console.ReadLine();
-            Console.WriteLine(firstName + " " + lastName);
+            Console.WriteLine(firstName + "  " + lastName);
 
         }
 
